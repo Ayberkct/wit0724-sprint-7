@@ -14,19 +14,19 @@ function App() {
     <>
       <Header user={user} setUser={setUser} />
       <Switch>
-        <Route exact path="/">
-          <p>Main Page by wit0624 on render</p>
+        <Route exact path='/'>
+          <p>Main Page by wit0624 on render ayberk</p>
         </Route>
-        <Route path="/product/:id/:name">
+        <Route path='/product/:id/:name'>
           <Product />
         </Route>
-        <Route path="/aboutus">
+        <Route path='/aboutus'>
           <AboutUs />
         </Route>
-        <Route path="/login">
+        <Route path='/login'>
           <Login setUser={setUser} />
         </Route>
-        <Route path="/register">
+        <Route path='/register'>
           <Register setUser={setUser} />
         </Route>
       </Switch>
