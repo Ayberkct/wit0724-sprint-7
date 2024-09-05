@@ -1,11 +1,11 @@
-import './App.css';
-import { Route, Switch } from 'react-router-dom';
-import Product from './components/Product';
-import AboutUs from './components/AboutUs';
-import { useState } from 'react';
-import Login from './components/Login';
-import Header from './components/Header';
-import Register from './components/Register';
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import Product from "./components/Product";
+import AboutUs from "./components/AboutUs";
+import { useState } from "react";
+import Login from "./components/Login";
+import Header from "./components/Header";
+import Register from "./components/Register";
 
 function App() {
   const [user, setUser] = useState();
@@ -15,7 +15,7 @@ function App() {
       <Header user={user} setUser={setUser} />
       <Switch>
         <Route exact path="/">
-          <p>Main Page</p>
+          <p>Main Page by wit0624</p>
         </Route>
         <Route path="/product/:id/:name">
           <Product />
