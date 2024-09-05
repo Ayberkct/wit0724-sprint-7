@@ -15,7 +15,7 @@ function App() {
       <Header user={user} setUser={setUser} />
       <Switch>
         <Route exact path="/">
-          <p>Main Page by wit0624</p>
+          <p>Main Page by wit0624 on render</p>
         </Route>
         <Route path="/product/:id/:name">
           <Product />
